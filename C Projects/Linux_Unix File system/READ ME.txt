@@ -1,0 +1,28 @@
+Linux/Unix like file system
+
+USER GUIDE:
+Within the zip folder labeled Pratoomratana_project1 is this file and five others.
+All you should have to do to compile and run this program is simply type "make" and the program should compile, them use ./Pratoomratana_project1 to run. You may get some errors in the p1_commands.c file but everything should be working fine when ./Pratoomratana_project1 is ran.
+
+FILES:
+The 5 files are outlined below.
+p1_Main.c - The main shell where you can type your commands. Exitable by calling "quit" or ctrl C.
+p1_func.c - Includes the set of commands that call the functions for their specific actions.
+p1_commands - Where the handling for specific commands lie and sends the user inputs to p1_func.c.
+p1_make.h - Header file that the 3 above functions depend on. Includes the libraries required and structure for the tree and user inputs.
+makefile - Makefile to make the file! Logic to compile the files in the correct order with all dependences for easy compilation.
+linux_file_system.c - Is the source code in one file if for some reason the make file doesn't compile.
+
+IMPLEMENTED COMMANDS:
+creat [FILE NAME] - makes a "file" in the tree system. 
+mkdir [DIRECTORY NAME] - Makes a directory that can have n number of directories or files within it.
+rmdir [DIRECTORY NAME] - Removes a directory if it exists.
+rm [FILE NAME] - Same as rmdir but with files.
+ls - Lists all the files and directory's within your current directory.
+pwd - Prints your location in the file directory from current location up to the root.
+cd [DIRECTORY NAME]- Change directories to the one specified if it exits. Use .. for the argument to go up a directory, or don't specify a argument to return to the root.
+quit - Exits the shell and kills the program.
+menu - List of all these commands.
+
+Unfortunately save/load functions for the tree are not yet implemented.
+

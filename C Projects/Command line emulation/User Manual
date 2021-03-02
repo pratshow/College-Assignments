@@ -1,0 +1,4 @@
+Command line emulation with C:
+
+The program runs in the command line and simply emulates what a command line would do with basic commands including: cd, pwd, cat, ls, and exit.
+You should be able to traverse your file directory as you would with a normal command line with this program.

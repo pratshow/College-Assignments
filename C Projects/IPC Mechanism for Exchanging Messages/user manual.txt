@@ -1,0 +1,10 @@
+IPC Mechanism for Exchanging Messages
+
+The program creates the basics of an IPC described in section 6.8 of the book. You are able to send a message, witch sends a signal to the child to then respond the the message with the same message but capitalized. There are time stamps for each message(In seconds.milliseconds since 01/01/1970) and the total time for the whole message round trip. The message has a 50% chance to fail to send which it will try again until success.
+
+The 3 files included are:
+proj3_header.h - Includes the header for global functions and libraries and time functions.
+proj3_main.c - The main file with the parent/child functions and a reply function.
+makefile - makefile for the two files. Compiled in the command line as such "gcc -o pratoomratana_p3_make proj3_main.c proj3_header.h -lm"
+
+Typing "make" in the terminal of the zip folder should compile and run with ./pratoomratana_p3_make If it doesn't for some reason just run the line above and it should be good.

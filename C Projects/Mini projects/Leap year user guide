@@ -1,0 +1,10 @@
+These are 3 seperate programs that do various simple things:
+
+Leap year:
+Asks the user for a year and the program will return if that year will be a leap year or not.
+
+Star Print: 
+Asks the user for a integer and the program will print a triangle of '*'s.
+
+Sumdigits:
+Simply asks the user for an intager then add all the intergers together and returns.

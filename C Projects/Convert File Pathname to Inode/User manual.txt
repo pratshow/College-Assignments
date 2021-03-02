@@ -1,0 +1,10 @@
+Convert File Pathname to Inode:
+
+The program is run with one argument of a pathname and lists information about the file or directory including file type, owner, size, date of creation, and it's data block number.
+
+The files included are:
+file_info_main.c - main and only file that takes the pathname supplied at the terminal and uses the stat function to get it's inode information and print it to the screen.
+
+makefile - Just compiles the file as 'gcc -o pratoomratana_p4 file_info_main'
+
+I've also included a dummy directory with just a few text files and subdirectory you can use to test the program. E.G: './pratoomratana_p4 /testdir/dir1/dir1/file1' and the program should list the files information.

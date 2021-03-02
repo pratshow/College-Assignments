@@ -1,0 +1,23 @@
+User-Level Threads Project:
+
+Be aware that the program is reliant on assembly code so it may not work on your specific system. The assembly was made for a UNIX/GNU system in mind.
+
+The executable file a.out will make Process 0(P0) that makes a 4x4 matrix and also creates 4 threads to compute each line of the matrix and come together to add up the sums.
+
+The files included in the zip file include:
+matrix_addition.c - Main file to create the threads and compute the matrix
+mutex.c - Includes the functions required to lock/unlock/create/destroy mutex.
+queue.c - Entering/exiting threads from the list of queues and pringting queue lists.
+type.h - header files includes defintions of varous states (FREE, READY, SLEEP etc.) and the PROC struc.
+wait.c - functions to sleep, wake up, exit, and join threads.
+ts.s - Assembly file to switch tasks. Made for x68 processer compiled in 32 bit mode.
+
+The file comiles using gcc with the -m32 flag with matrix_addition.c as the C file and ts.s as the assembly file.
+gcc -m32 matrix_addition.c ts.s
+
+The makefile would allow for easy compilation by simply typing "make", This will create a executable a.out
+
+Type ./a.out to run the program.
+
+If for some reason the make file doesn't work simply type the following into the command line:
+gcc -m32 matrix_addition.c ts.s
