@@ -1,0 +1,5 @@
+Scoreboard:
+
+This program creates a "scoreboard" like for a game to list players and high scores. The program populates a Linked list with game entries that have a player and score. The scores are a random number between 0-1000.
+The program also does various computations witht the scores. 
+It then makes a second scoreboard but with a doubly linked list instead and repeats printing and calculating.

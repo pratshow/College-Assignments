@@ -1,0 +1,5 @@
+Greatest Common Denominator:
+
+This Assembly program asks the user for 2 integers and will return the greatest common denominator between the two numbers if one exists.
+
+This is made with assembly code with a raspberry pie architecture in mind so it may not work properly on your system.
